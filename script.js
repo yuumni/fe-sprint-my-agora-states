@@ -94,9 +94,9 @@ form.addEventListener('submit',function(event){
   // 다시 agoraStatesDiscussions 기반으로 화면에 보여주기 (렌더링)
   render(ul);
   // ul.prepend(convertToDiscussion(newObj));
-  // nameInput.value = '';
-  // titleInput.value = '';
-  // question.value = '';  
+  nameInput.value = '';
+  titleInput.value = '';
+  question.value = '';  
 
 })
 
