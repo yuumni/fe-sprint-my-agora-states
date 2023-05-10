@@ -68,7 +68,7 @@ const nameInput = document.querySelector('input#name');
 const titleInput = document.querySelector('input#title');
 const question = document.querySelector('textarea#story');
 
-form.addEventListener('submit',function(event){
+form.addEventListener('submit',function (event) {
   event.preventDefault();
 
   let today = new Date();
@@ -90,6 +90,8 @@ form.addEventListener('submit',function(event){
   while (ul.firstChild) {
     ul.removeChild(ul.firstChild);
   }
+  // 로컬 스토리지
+  localStorage.setItem("agoraStatesDiscussions", JSON.stringify(newObj));
 
   // 다시 agoraStatesDiscussions 기반으로 화면에 보여주기 (렌더링)
   render(ul);
